@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flow Care</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Flow Care</h1>
+
+<form action="/predict" method="POST">
+
+<label>Name:</label><br>
+<input type="text" name="name" required><br><br>
+
+<label>Age:</label><br>
+<input type="number" name="age" required><br><br>
+
+<label>Last Period Date:</label><br>
+<input type="date" name="last_period" required><br><br>
+
+<input type="submit" value="Predict">
+
+</form>
+
+</body>
+</html>
